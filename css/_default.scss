@@ -1,0 +1,37 @@
+.color-row {
+  background: $primary-color;
+  padding: 20px 0px 20px 0px;
+  color: white;
+  h1 {
+    color: white;
+  }
+}
+
+.image-row {
+ background-size: cover;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: emCalc(50);
+}
+
+h2 {
+  
+}
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: emCalc(33);
+}
+
+a:hover {
+  color:darken($primary-color, 5%);
+  @include transition ();
+}
+
+a {
+  @include transition ();
+}

@@ -1,0 +1,26 @@
+/* Big Triangle */
+svg#bigTriangleColor {
+	pointer-events: none;
+}
+
+#bigTriangleColor path {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 2;
+}
+
+.divider-arrow {
+  margin-bottom: -100px;
+}
+
+.after-arrow {
+  padding-top: 100px;
+}
+
+.divider-centered {
+  padding-top: 10px;
+  text-align: center;
+  h1 {
+    margin-bottom: -15px;
+  }
+}

@@ -1,3 +1,9 @@
 @import "bourbon/bourbon";
 @import "kbm-foundation-settings";
 @import "foundation";
+
+@import "dividers";
+@import "default";
+
+//pages
+@import "pages/home";
