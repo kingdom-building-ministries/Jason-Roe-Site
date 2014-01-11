@@ -18,9 +18,11 @@ svg#bigTriangleColor {
 }
 
 .divider-centered {
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: center;
   h1 {
     margin-bottom: -15px;
+    font-size: emCalc(50);
+    color: black;
   }
 }
