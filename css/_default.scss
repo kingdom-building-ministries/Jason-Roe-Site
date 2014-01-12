@@ -1,11 +1,15 @@
 .color-row {
-  background: $primary-color;
   padding: 60px 0px 60px 0px;
   color: white;
 }
 
 .image-row {
- background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-background {
+  background: white;
 }
 
 .white-row {
