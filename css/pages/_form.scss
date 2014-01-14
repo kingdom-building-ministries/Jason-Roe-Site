@@ -1,0 +1,27 @@
+.booking-form {
+  &:after {
+    background-image: url('/img/forms/booking/booking-form.jpg');
+    background-position: center top;
+}
+  padding-top: 220px;
+  padding-bottom: 150px;
+  h4 {
+  color: white;
+  text-align: justify;
+  font-weight: 300;
+  }
+}
+
+.missions-form {
+  &:after {
+    background-image: url('/img/forms/missions/missions-form.jpg');
+    background-position: center bottom;
+}
+  padding-top: 220px;
+  padding-bottom: 150px;
+  h4 {
+  color: white;
+  text-align: justify;
+  font-weight: 300;
+  }
+}
