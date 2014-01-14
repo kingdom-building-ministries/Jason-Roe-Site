@@ -1,19 +1,23 @@
 .homepage-header {
   height: 450px;
-  background-image: url('/img/jason-deep-camp-1.jpg');
+  background-image: url('/img/home/jason-deep-camp-1.jpg');
+  background-position: center top;
 }
 
 .upcoming-events {
   padding-top: 80px;
   height: 600px;
   &:after {
-    background-image: url('/img/upcoming-events.jpg');
+    background-image: url('/img/home/upcoming-events.jpg');
   }
 }
 
 .triple-ad-row {
   @media #{$medium} {
     @include block-grid($per-row: 3, $spacing: 10px, $base-style: true);
+    li {
+      padding: 0;
+    }
   }
   li {
     @media #{$small-only} {
@@ -23,32 +27,45 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    overflow: hidden;
+    padding: 0;
     position: relative;
+    &:after { /* Cover the padding between ads with white */
+      position: absolute;
+      height: 100%;
+      background-color: white;
+      width: 10px;
+      height: 100%;
+      top:0;
+      right:-10px;
+      content: '';
+      @media #{$small-only} {
+        width: 100%;
+        height: 20px;
+        bottom: -20px;
+        left: 0;
+        top:auto;
+      }
+    }
   }
   div {
     position: relative;
     padding-bottom: 100%;
     height: 0;
-    margin-bottom: 1rem;
     overflow: hidden;
-    background-color: #000;
   }
   h1 {
     margin-top: 40%;
   }
 }
 
-.bottom-ad-1 div {
-  background-image: url('/img/resurrection-ministries.jpg');
+.bottom-ad-1 div:after {
+  background-image: url('/img/home/resurrection-ministries.jpg');
 }
 
-.bottom-ad-2 div {
-  /*   background-image: url('/img/jesus-rally.jpg'); */
-  background-image: url('/img/resurrection-ministries.jpg');
+.bottom-ad-2 div:after {
+  background-image: url('/img/home/resurrection-ministries.jpg');
 }
 
-.bottom-ad-3 div {
-  background-image: url('/img/resurrection-ministries.jpg');
-
+.bottom-ad-3 div:after {
+  background-image: url('/img/home/resurrection-ministries.jpg');
 }

@@ -10,8 +10,40 @@ svg#bigTriangleColor {
 }
 
 .divider-arrow {
+  position: relative;
+  &:after {
+  background-image: url('/img/layout/big-triangle.svg');
   margin-bottom: -100px;
+  background-color: transparent;
+  height: 100px;
+  content: '';
+  width: 100%;
+  display: block;
+  z-index: 1;
+  background-size: 100% 100%;
+  position: absolute;
+
+  }
 }
+
+.player-divider-left-top-solid {
+  position: relative;
+  &:before {
+  background-image: url('/img/layout/player-divider-left-top-solid.svg');
+  background-color: transparent;
+  width: 230px; 
+  height: 55px;
+  content: '';
+  display: block;
+  z-index: 1;
+  top: -55px;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -115px;
+  }
+}
+
 
 .after-arrow {
   padding-top: 100px;
