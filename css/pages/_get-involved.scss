@@ -1,6 +1,20 @@
 .bio {
+  &:after {
   background-image: url('/img/get-involved/background.jpg');
+  }
   padding-top: 100px;
   padding-bottom: 50px;
-  height: 400px;
+  height: 600px;
+  color: white;
 }
+
+.sign-up-row {
+  img {
+    margin: auto;
+    display: block;
+  }
+  h1{
+    text-align: center;
+  }
+}
+

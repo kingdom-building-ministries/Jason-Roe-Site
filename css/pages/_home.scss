@@ -59,13 +59,15 @@
 }
 
 .bottom-ad-1 div:after {
-  background-image: url('/img/home/resurrection-ministries.jpg');
+  background-image: url('/img/home/resurrection-min.jpg');
 }
 
 .bottom-ad-2 div:after {
-  background-image: url('/img/home/resurrection-ministries.jpg');
+  background-image: url('/img/home/jesus-rally.jpg');
 }
 
 .bottom-ad-3 div:after {
-  background-image: url('/img/home/resurrection-ministries.jpg');
+  background-image: url('/img/home/jce-min.png');
+  background-color: darken($primary-color, 5%);
+
 }
