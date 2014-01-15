@@ -28,35 +28,42 @@ svg#bigTriangleColor {
 
 .player-divider-left-top-solid {
   position: relative;
-  &:before {
-  background-image: url('/img/layout/player-divider-left-top-solid.svg');
-  background-color: transparent;
-  width: 230px; 
-  height: 55px;
-  content: '';
-  display: block;
-  z-index: 1;
-  top: -55px;
-  background-size: 100% 100%;
-  position: absolute;
-  left: 50%;
-  margin-left: -115px;
+  &:after {
+    background-image: url('/img/layout/player-divider-left-top-solid.svg');
+    background-color: transparent;
+    width: 230px; 
+    height: 55px;
+    content: '';
+    display: block;
+    top: -54px;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -115px;
+    z-index:-1;
   }
 }
 
 .player-divider-left-bottom {
   position: relative;
   &:before {
-  background-image: url('/img/layout/player-divider-left-bottom.svg');
-  background-color: transparent;
-  content: '';
-  width: 100%;
-  height: 100%;
-  display: block;
-  z-index: 1;
-  background-size: 100% 100%;
-  position: absolute;
-  bottom: -150px;
+    background-image: url('/img/layout/player-divider-left-bottom.svg');
+    background-color: transparent;
+    background-position: center;
+    content: '';
+    height: 70px;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 203px;
+    margin-right: -415px;
+    @media #{$large} {
+      margin-left: -667px;
+      bottom: 0;
+      top: auto;
+    }
   }
 }
 

@@ -1,11 +1,13 @@
 .bio {
   &:after {
-  background-image: url('/img/get-involved/background.jpg');
+    background-image: url('/img/get-involved/background.jpg');
   }
   padding-top: 100px;
-  padding-bottom: 50px;
-  height: 600px;
+  padding-bottom: 0;
   color: white;
+  img {
+    border: none;
+  }
 }
 
 .sign-up-row {
@@ -18,3 +20,10 @@
   }
 }
 
+.get-involved-event-report {
+  @media #{$large} {
+    .audio-player {
+      margin-top: 0;
+    }
+  }
+}

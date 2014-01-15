@@ -9,6 +9,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
+  - '#*#'
 
 permalink: pretty
 

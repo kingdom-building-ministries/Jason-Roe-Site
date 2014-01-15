@@ -12,6 +12,10 @@
   }
 }
 
+.bottom-row-home {
+  padding-bottom: 80px;
+}
+
 .triple-ad-row {
   @media #{$medium} {
     @include block-grid($per-row: 3, $spacing: 10px, $base-style: true);
