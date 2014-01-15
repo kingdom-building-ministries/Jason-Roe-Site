@@ -21,6 +21,9 @@
 }
 
 .get-involved-event-report {
+  h4 {
+    color: white;
+  }
   @media #{$large} {
     .audio-player {
       margin-top: 0;
