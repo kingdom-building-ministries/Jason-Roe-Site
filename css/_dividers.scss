@@ -70,6 +70,11 @@ svg#bigTriangleColor {
 
 .after-arrow {
   padding-top: 100px;
+  .large-6 {
+    @media #{$small-only} {
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .divider-centered {
