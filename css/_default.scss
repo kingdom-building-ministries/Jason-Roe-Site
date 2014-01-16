@@ -107,3 +107,9 @@ img {
 .full-width-video {
   padding-top: 120px;
 }
+
+.left-off-canvas-toggle {
+  @media {#$large} {
+    display: none;
+  }
+}
