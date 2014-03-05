@@ -109,7 +109,7 @@ img {
 }
 
 .left-off-canvas-toggle {
-  @media {#$large} {
+  @media #{$large} {
     display: none;
   }
 }
