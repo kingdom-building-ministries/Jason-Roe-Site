@@ -1,6 +1,14 @@
 .color-row {
   padding: 60px 0px 60px 0px;
   color: white;
+  a {
+  color: lighten($secondary-color, 5%);
+  @include transition ();
+  &:hover {
+    color:darken($secondary-color, 5%);
+  @include transition ();
+  }
+}
 }
 
 .image-row {
@@ -59,13 +67,17 @@ h1 {
 }
 
 h2 {
-  
+ font-weight: bold;
+  text-transform: uppercase;
+  font-size: emCalc(36);
+  color: white; 
 }
 
 h3 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: emCalc(33);
+  color: white;
 }
 
 h4 {
@@ -74,13 +86,20 @@ h4 {
   font-size: emCalc(28);
 }
 
-a:hover {
-  color:darken($primary-color, 5%);
-  @include transition ();
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+  color: white;
 }
 
 a {
+  color: $primary-color;
   @include transition ();
+  &:hover {
+    color:darken($primary-color, 5%);
+  @include transition ();
+  }
 }
 
 iframe {
@@ -90,6 +109,12 @@ iframe {
 img {
   border: 8px solid white;
 }
+
+/*
+p {
+  font-size: 1.2em;
+}
+*/
 
 .audio-player {
   width: 200px;
