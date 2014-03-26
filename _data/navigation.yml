@@ -1,0 +1,12 @@
+- text: Booking
+  url: /booking
+  id: booking
+- text: Get Involved
+  url: /get-involved
+  id: get-involved
+- text: Follow Up
+  url: /follow-up
+  id: follow-up
+- text: Mission Trips
+  url: /mission-trips
+  id: mission-trips
