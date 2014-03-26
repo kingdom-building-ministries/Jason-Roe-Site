@@ -1,25 +1,9 @@
 {% for link in site.data.navigation %}
-  <li {% if link.items %}class="has-dropdown top-level"{% endif %}>
-    {% assign current_path_components = page.url | split:'/' %}
-    {% assign link_path_components = link.url | split:'/' %}
-    <a href="{{link.url}}" class="{% if page.highlight-menu-id == link.id %} active{% elsif link_path_components[1] == null and path_components[1] == link.id %} active{% endif %}">
+  {% assign current_path_components = page.url | split:'/' %}
+  {% assign link_path_components = link.url | split:'/' %}
+  <li class="{% if link.items %}has-dropdown top-level{% endif %}{% if page.highlight-menu-id == link.id %} active{% elsif link_path_components[1] == current_path_components[1] %} active{% endif %}">
+    <a href="{{link.url}}">
       {{link.text}}
     </a>
-    {% if link.items %}
-      <ul id="{{link.id}}" class="dropdown">
-        {% for sublink in link.items %}
-          <li {% if sublink.items %}class="has-dropdown"{% endif %}>
-            <a href="{{sublink.url}}">{{sublink.text}}</a>
-            {% if sublink.items %}
-              <ul class="dropdown">
-                {% for deeplink in sublink.items %}
-                  <li><a href="{{deeplink.url}}">{{deeplink.text}}</a></li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
   </li>
 {% endfor %}
