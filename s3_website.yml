@@ -1,3 +1,4 @@
+#To do a local deploy add the key info here for the s3_staging user and 'rake deploy'
 #s3_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
 #s3_secret: <%= ENV['S3_SECRET_KEY'] %>
 s3_bucket: www.jasonroe.org
